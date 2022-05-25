@@ -22,13 +22,11 @@
         // Close file
         fclose($fileHandlerRead);
     
-        // loop through array and print to screen
-        foreach ($csvarray as $key => $value) {
-            foreach ($value as $key => $val) {
-                echo $val . ",";
-            }
-            echo "<br>";
-        }
+        // print to screen
+        echo "<pre>";
+        print_r($csvarray);
+        echo "</pre>";
+        
     }else{
         echo "Please fill all the form fields";
     }
